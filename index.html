@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Psykisk ohälsa bland studerande i Indien</title>
+<link rel="stylesheet" href="/css/styles.css" />
+<!-- Google Charts -->
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+<!-- sql.js (SQLite i webbläsaren) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.2/sql-wasm.js" integrity="sha512-kV3h5z7m1o/f9XwL2kH0E8bJr3Vh0o2d9sQkQ0p9OJkZ0rQYlYh5e8H6tC2yQnJHh3k6RhqO2iY2nJx5mRrW1A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- simple-statistics -->
+<script src="https://cdn.jsdelivr.net/npm/simple-statistics@7.8.3/dist/simple-statistics.min.js"></script>
+</head>
+<body>
+<header>
+<h1>Psykisk ohälsa bland studerande i Indien</h1>
+<nav>
+<button data-nav="start">Start</button>
+<button data-nav="oversikt">Översikt</button>
+<button data-nav="samband">Samband & korrelation</button>
+<button data-nav="normalitet">Normalitet</button>
+</nav>
+</header>
+
+
+<main>
+<!-- START -->
+<section id="view-start" class="view active">
+<h2>Bakgrund & frågeställning</h2>
+<p>
+Den här rapporten analyserar ett enkätmaterial (~27 900 svar) om psykisk ohälsa bland studerande
+i Indien. Vi undersöker särskilt hur <em>studie- och arbetsbörda</em>, <em>sömn</em>, <em>kost</em>,
+och <em>ekonomisk stress</em> hänger ihop med självrapporterad depression.
+</p>
+<div class="callout">
+<strong>Story att testa:</strong> Påverkar hög akademisk press och ekonomisk stress sannolikheten
+att vara deprimerad – och dämpar tillräcklig sömn effekten?
+</div>
+<div id="data-info"></div>
+</section>
+
+
+<!-- ÖVERSIKT -->
+<section id="view-oversikt" class="view">
+<h2>Översikt & filter</h2>
+<div class="filters">
+<label>Kön:
+<select id="f-gender"></select>
+</label>
+<label>Sömn (timmar, min):
+<select id="f-sleep-min"></select>
+</label>
+<label>Sömn (timmar, max):
+<select id="f-sleep-max"></select>
+</label>
+<label>Arbetstimmar/dag (max):
+<select id="f-work-max"></select>
+</label>
+</div>
+<div class="grid">
+</html>
